@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 
@@ -40,7 +43,12 @@ export default function WhyMeridian() {
                 <div className="grid lg:grid-cols-2 gap-20 items-center">
 
                     {/* LEFT CONTENT */}
-                    <div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 60 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.25 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                    >
 
                         <div className="flex items-center gap-4 mb-8">
                             <div className="w-10 h-[1px] bg-[#C9A227]" />
@@ -73,14 +81,18 @@ export default function WhyMeridian() {
                             <ArrowRight size={18} />
                         </Link>
 
-                    </div>
+                    </motion.div>
 
                     {/* RIGHT CARDS */}
                     <div className="grid sm:grid-cols-2 gap-5">
 
                         {features.map((item, index) => (
-                            <div
+                            <motion.div
                                 key={index}
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, amount: 0.25 }}
+                                transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
                                 className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-md p-8 hover:bg-white/15 transition duration-300"
                             >
                                 <CheckCircle2
@@ -95,7 +107,7 @@ export default function WhyMeridian() {
                                 <p className="text-gray-300 leading-7">
                                     {item.description}
                                 </p>
-                            </div>
+                            </motion.div>
                         ))}
 
                     </div>

@@ -7,19 +7,34 @@ import Values from '@/components/about/Values'
 import WorkWithBest from '@/components/about/WorkWithBest'
 import Footer from '@/components/sections/Footer'
 import Navbar from '@/components/sections/Navbar'
+import ScrollReveal from '@/components/ScrollReveal'
 import React from 'react'
 
 const page = () => {
     return (
         <main className="overflow-x-hidden bg-white">
             <Navbar />
-            <AboutHero />
-            <AboutStory />
-            <Values />
-            <Timeline />
-            <Leadership />
-            <Accreditations />
-            <WorkWithBest />
+            <ScrollReveal>
+                <AboutHero />
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
+                <AboutStory />
+            </ScrollReveal>
+            <ScrollReveal delay={0.15}>
+                <Values />
+            </ScrollReveal>
+            <ScrollReveal delay={0.2}>
+                <Timeline />
+            </ScrollReveal>
+            <ScrollReveal delay={0.25}>
+                <Leadership />
+            </ScrollReveal>
+            <ScrollReveal delay={0.3}>
+                <Accreditations />
+            </ScrollReveal>
+            <ScrollReveal delay={0.35}>
+                <WorkWithBest />
+            </ScrollReveal>
             <Footer />
         </main>
     )

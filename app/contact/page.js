@@ -7,36 +7,49 @@ import Navbar from "@/components/sections/Navbar";
 import ContactFAQ from "@/components/contact/ContactFAQ";
 import ContactCTA from "@/components/contact/ContactCTA";
 import Footer from "@/components/sections/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function ContactPage() {
     return (
         <>
             <Navbar />
-            <ContactHero />
+            <ScrollReveal>
+                <ContactHero />
+            </ScrollReveal>
 
-            <ContactInfo />
+            <ScrollReveal delay={0.1}>
+                <ContactInfo />
+            </ScrollReveal>
 
-            <section className="bg-[#F8F8F8] py-20">
-                <div className="max-w-7xl mx-auto px-6">
+            <ScrollReveal delay={0.15}>
+                <section className="bg-[#F8F8F8] py-20">
+                    <div className="max-w-7xl mx-auto px-6">
 
-                    <div className="grid lg:grid-cols-3 gap-10">
+                        <div className="grid lg:grid-cols-3 gap-10">
 
-                        <div className="lg:col-span-2">
-                            <QuoteForm />
+                            <div className="lg:col-span-2">
+                                <QuoteForm />
+                            </div>
+
+                            <ContactSidebar />
+
                         </div>
 
-                        <ContactSidebar />
-
                     </div>
+                </section>
+            </ScrollReveal>
 
-                </div>
-            </section>
+            <ScrollReveal delay={0.2}>
+                <OfficeLocations />
+            </ScrollReveal>
 
-            <OfficeLocations />
+            <ScrollReveal delay={0.25}>
+                <ContactFAQ />
+            </ScrollReveal>
 
-            <ContactFAQ />
-
-            <ContactCTA />
+            <ScrollReveal delay={0.3}>
+                <ContactCTA />
+            </ScrollReveal>
 
             <Footer />
 
