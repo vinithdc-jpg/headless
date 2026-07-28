@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
     Building2,
     BriefcaseBusiness,
@@ -54,11 +55,11 @@ export default function ServicesSection() {
                 {/* Heading */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <div className="flex items-center justify-center gap-4 mb-5">
-                        <div className="w-10 h-[1px] bg-[#C9A227]" />
+                        <div className="w-10 h-px bg-[#C9A227]" />
                         <span className="uppercase tracking-[4px] text-xs text-[#C9A227]">
                             Our Expertise
                         </span>
-                        <div className="w-10 h-[1px] bg-[#C9A227]" />
+                        <div className="w-10 h-px bg-[#C9A227]" />
                     </div>
 
                     <h2 className="font-serif text-5xl text-[#071B3A] font-semibold">
@@ -102,10 +103,13 @@ export default function ServicesSection() {
                                 </p>
 
                                 {/* Link */}
-                                <button className="mt-8 flex items-center gap-2 text-[#C9A227] font-medium hover:gap-3 transition-all">
+                                <Link
+                                    href="/services"
+                                    className="mt-8 inline-flex items-center gap-2 text-[#C9A227] font-medium hover:gap-3 transition-all"
+                                >
                                     Learn More
                                     <ArrowRight size={16} />
-                                </button>
+                                </Link>
                             </div>
                         );
                     })}
@@ -113,10 +117,13 @@ export default function ServicesSection() {
 
                 {/* Button */}
                 <div className="flex justify-center mt-16">
-                    <button className="bg-[#071B3A] text-white px-10 py-4 font-semibold flex items-center gap-3 hover:bg-[#0B285A] transition">
+                    <Link
+                        href="/services"
+                        className="bg-[#071B3A] text-white px-10 py-4 font-semibold flex items-center gap-3 hover:bg-[#0B285A] transition"
+                    >
                         View All Services
                         <ArrowRight size={18} />
-                    </button>
+                    </Link>
                 </div>
             </div>
         </section>

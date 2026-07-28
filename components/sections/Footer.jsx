@@ -56,13 +56,23 @@ export default function Footer() {
 
             {/* Social Links */}
             <div className="flex gap-3 mt-8">
-              <button className="w-10 h-10 border border-slate-600 hover:border-[#C9A227] hover:bg-[#C9A227] hover:text-[#071B3A] transition text-sm">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noreferrer"
+                className="w-10 h-10 inline-flex items-center justify-center border border-slate-600 hover:border-[#C9A227] hover:bg-[#C9A227] hover:text-[#071B3A] transition text-sm"
+              >
                 FB
-              </button>
+              </a>
 
-              <button className="w-10 h-10 border border-slate-600 hover:border-[#C9A227] hover:bg-[#C9A227] hover:text-[#071B3A] transition text-sm">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noreferrer"
+                className="w-10 h-10 inline-flex items-center justify-center border border-slate-600 hover:border-[#C9A227] hover:bg-[#C9A227] hover:text-[#071B3A] transition text-sm"
+              >
                 IG
-              </button>
+              </a>
             </div>
           </div>
 

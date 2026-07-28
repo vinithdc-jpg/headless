@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export default function CTASection() {
@@ -22,21 +23,27 @@ export default function CTASection() {
                 {/* Buttons */}
                 <div className="mt-12 flex flex-col sm:flex-row justify-center items-center gap-5">
 
-                    <button className="group bg-[#C9A227] hover:bg-[#B9961E] text-[#071B3A] font-semibold uppercase tracking-wider px-10 py-4 rounded-sm shadow-lg shadow-[#C9A227]/30 transition duration-300 flex items-center gap-3">
+                    <Link
+                        href="/contact"
+                        className="group bg-[#C9A227] hover:bg-[#B9961E] text-[#071B3A] font-semibold uppercase tracking-wider px-10 py-4 rounded-sm shadow-lg shadow-[#C9A227]/30 transition duration-300 flex items-center gap-3"
+                    >
                         Get a Free Quote
                         <ArrowRight
                             size={18}
                             className="group-hover:translate-x-1 transition-transform"
                         />
-                    </button>
+                    </Link>
 
-                    <button className="group border border-slate-600 hover:border-[#C9A227] text-white hover:text-[#C9A227] px-10 py-4 rounded-sm transition duration-300 flex items-center gap-3">
+                    <Link
+                        href="/claims"
+                        className="group border border-slate-600 hover:border-[#C9A227] text-white hover:text-[#C9A227] px-10 py-4 rounded-sm transition duration-300 flex items-center gap-3"
+                    >
                         Report a Claim
                         <ArrowRight
                             size={18}
                             className="group-hover:translate-x-1 transition-transform"
                         />
-                    </button>
+                    </Link>
 
                 </div>
 

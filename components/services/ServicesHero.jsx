@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export default function ServicesHero() {
@@ -53,20 +54,23 @@ export default function ServicesHero() {
                     {/* Buttons */}
                     <div className="mt-12 flex flex-wrap gap-5">
 
-                        <button className="group flex items-center gap-3 bg-[#C9A227] px-8 py-4 text-[#071B3A] font-semibold uppercase tracking-wider hover:bg-[#B9961E] transition">
-
+                        <Link
+                            href="/services"
+                            className="group flex items-center gap-3 bg-[#C9A227] px-8 py-4 text-[#071B3A] font-semibold uppercase tracking-wider hover:bg-[#B9961E] transition"
+                        >
                             Explore Services
-
                             <ArrowRight
                                 size={18}
                                 className="transition-transform group-hover:translate-x-1"
                             />
+                        </Link>
 
-                        </button>
-
-                        <button className="border border-slate-500 px-8 py-4 text-white hover:border-[#C9A227] hover:text-[#C9A227] transition">
+                        <Link
+                            href="/contact"
+                            className="border border-slate-500 px-8 py-4 text-white hover:border-[#C9A227] hover:text-[#C9A227] transition"
+                        >
                             Speak to an Adviser
-                        </button>
+                        </Link>
 
                     </div>
 

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ArrowRight, PhoneCall } from "lucide-react";
 
 export default function ServicesCTA() {
@@ -58,24 +59,24 @@ export default function ServicesCTA() {
 
                     <div className="mt-12 flex flex-wrap justify-center gap-5">
 
-                        <button className="group bg-[#C9A227] hover:bg-[#B9961E] text-[#071B3A] font-semibold px-8 py-4 uppercase tracking-wider flex items-center gap-3 transition">
-
+                        <Link
+                            href="/contact"
+                            className="group bg-[#C9A227] hover:bg-[#B9961E] text-[#071B3A] font-semibold px-8 py-4 uppercase tracking-wider flex items-center gap-3 transition"
+                        >
                             Request a Consultation
-
                             <ArrowRight
                                 size={18}
                                 className="transition-transform group-hover:translate-x-1"
                             />
+                        </Link>
 
-                        </button>
-
-                        <button className="group border border-slate-500 hover:border-[#C9A227] text-white hover:text-[#C9A227] px-8 py-4 flex items-center gap-3 transition">
-
+                        <a
+                            href="tel:+442071234567"
+                            className="group border border-slate-500 hover:border-[#C9A227] text-white hover:text-[#C9A227] px-8 py-4 flex items-center gap-3 transition"
+                        >
                             <PhoneCall size={18} />
-
                             +44 20 7123 4567
-
-                        </button>
+                        </a>
 
                     </div>
 

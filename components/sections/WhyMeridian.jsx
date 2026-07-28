@@ -1,4 +1,5 @@
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import Link from "next/link";
 
 const features = [
     {
@@ -64,10 +65,13 @@ export default function WhyMeridian() {
                             knowledge to every client relationship.
                         </p>
 
-                        <button className="mt-10 flex items-center gap-3 text-[#C9A227] font-semibold hover:gap-4 transition-all">
+                        <Link
+                            href="/about"
+                            className="mt-10 inline-flex items-center gap-3 text-[#C9A227] font-semibold hover:gap-4 transition-all"
+                        >
                             Discover Our Story
                             <ArrowRight size={18} />
-                        </button>
+                        </Link>
 
                     </div>
 
