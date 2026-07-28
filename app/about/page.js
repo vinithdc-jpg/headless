@@ -4,6 +4,7 @@ import AboutStory from '@/components/about/AboutStory'
 import Leadership from '@/components/about/Leadership'
 import Timeline from '@/components/about/Timeline'
 import Values from '@/components/about/Values'
+import WorkWithBest from '@/components/about/WorkWithBest'
 import Footer from '@/components/sections/Footer'
 import Navbar from '@/components/sections/Navbar'
 import React from 'react'
@@ -18,6 +19,7 @@ const page = () => {
             <Timeline />
             <Leadership />
             <Accreditations />
+            <WorkWithBest />
             <Footer />
         </main>
     )
