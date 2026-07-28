@@ -18,7 +18,7 @@ const page = () => {
             <Timeline />
             <Leadership />
             <Accreditations />
-            {/* <Footer /> */}
+            <Footer />
         </main>
     )
 }
