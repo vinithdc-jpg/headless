@@ -1,4 +1,5 @@
 import StatsSection from '@/components/cards/InfoCard'
+import CTASection from '@/components/sections/CTASection'
 import HeroSection from '@/components/sections/Hero'
 import Navbar from '@/components/sections/Navbar'
 import ServicesSection from '@/components/sections/ServiceSection'
@@ -15,6 +16,7 @@ const page = () => {
       <ServicesSection />
       <WhyMeridian />
       <Testimonials />
+      <CTASection />
     </div>
   )
 }
