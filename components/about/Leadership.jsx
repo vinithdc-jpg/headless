@@ -1,5 +1,6 @@
+"use client"
 import {
-  Linkedin,
+  LinkedinIcon,
   Mail,
   ArrowRight,
 } from "lucide-react";
@@ -91,7 +92,7 @@ export default function Leadership() {
                 <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-3 opacity-0 group-hover:opacity-100 transition duration-500">
 
                   <button className="w-10 h-10 rounded-full bg-white text-[#071B3A] flex items-center justify-center hover:bg-[#C9A227] hover:text-white transition">
-                    <Linkedin size={18} />
+                    {/* <LinkedinIcon size={18} /> */}
                   </button>
 
                   <button className="w-10 h-10 rounded-full bg-white text-[#071B3A] flex items-center justify-center hover:bg-[#C9A227] hover:text-white transition">
