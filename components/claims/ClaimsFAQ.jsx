@@ -45,61 +45,55 @@ export default function ClaimsFAQ() {
 
                 {/* Accordion */}
 
-                <div className="space-y-4">
-
+                <div className="space-y-4" role="list">
                     {claimsFaqData.map((item, index) => {
-
                         const isOpen = active === index;
+                        const panelId = `claims-faq-panel-${item.id}`;
+                        const buttonId = `claims-faq-button-${item.id}`;
 
                         return (
-
                             <div
                                 key={item.id}
+                                role="listitem"
                                 className="border border-gray-200 bg-white transition hover:border-[#C9A227]"
                             >
-
                                 <button
+                                    id={buttonId}
+                                    type="button"
+                                    aria-expanded={isOpen}
+                                    aria-controls={panelId}
                                     onClick={() => toggle(index)}
-                                    className="w-full flex justify-between items-center px-8 py-6"
+                                    className="w-full flex justify-between items-center gap-4 px-6 sm:px-8 py-5 sm:py-6 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C9A227]"
                                 >
-
                                     <h3 className="text-left font-medium text-[#071B3A]">
                                         {item.question}
                                     </h3>
-
                                     <ChevronDown
                                         size={20}
-                                        className={`transition duration-300 ${isOpen ? "rotate-180 text-[#C9A227]" : ""
-                                            }`}
+                                        aria-hidden
+                                        className={`shrink-0 transition duration-300 ${
+                                            isOpen ? "rotate-180 text-[#C9A227]" : ""
+                                        }`}
                                     />
-
                                 </button>
 
                                 <div
-                                    className={`grid transition-all duration-300 ${isOpen
-                                            ? "grid-rows-[1fr]"
-                                            : "grid-rows-[0fr]"
-                                        }`}
+                                    id={panelId}
+                                    role="region"
+                                    aria-labelledby={buttonId}
+                                    className={`grid transition-all duration-300 ease-in-out ${
+                                        isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                                    }`}
                                 >
-
                                     <div className="overflow-hidden">
-
-                                        <div className="px-8 pb-8 text-gray-600 leading-8">
-
+                                        <div className="px-6 sm:px-8 pb-6 sm:pb-8 text-gray-600 leading-8">
                                             {item.answer}
-
                                         </div>
-
                                     </div>
-
                                 </div>
-
                             </div>
-
                         );
-
                     })}
-
                 </div>
 
             </div>

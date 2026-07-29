@@ -13,7 +13,7 @@ import {
 
 export default function EmergencyContact() {
     return (
-        <section className="bg-[#F8F8F8] py-24">
+        <section id="emergency-contact" className="bg-[#F8F8F8] py-16 sm:py-24">
 
             <div className="max-w-7xl mx-auto px-6">
 

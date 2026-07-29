@@ -13,6 +13,7 @@ export default function ContactPage() {
     return (
         <>
             <Navbar />
+            <main id="main-content" className="flex-1 overflow-x-hidden bg-white">
             <ScrollReveal>
                 <ContactHero />
             </ScrollReveal>
@@ -28,7 +29,7 @@ export default function ContactPage() {
                         <div className="grid lg:grid-cols-3 gap-10">
 
                             <div className="lg:col-span-2">
-                                <QuoteForm />
+                                <QuoteForm embedded />
                             </div>
 
                             <ContactSidebar />
@@ -50,9 +51,8 @@ export default function ContactPage() {
             <ScrollReveal delay={0.3}>
                 <ContactCTA />
             </ScrollReveal>
-
+            </main>
             <Footer />
-
         </>
     );
 }

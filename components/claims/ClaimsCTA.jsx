@@ -1,6 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { ArrowRight, PhoneCall, ShieldCheck } from "lucide-react";
+import { PHONE_HREF } from "@/lib/siteLinks";
 
 const stats = [
     {
@@ -78,24 +80,25 @@ export default function ClaimsCTA() {
 
                     <div className="mt-12 flex flex-wrap justify-center gap-5">
 
-                        <button className="group bg-[#C9A227] hover:bg-[#B9961E] text-[#071B3A] font-semibold px-8 py-4 uppercase tracking-wider flex items-center gap-3 transition">
-
+                        <Link
+                            href="/contact"
+                            className="group inline-flex items-center gap-3 bg-[#C9A227] px-6 sm:px-8 py-4 font-semibold uppercase tracking-wider text-[#071B3A] transition hover:bg-[#B9961E] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        >
                             Report a Claim
-
                             <ArrowRight
                                 size={18}
                                 className="group-hover:translate-x-1 transition"
+                                aria-hidden
                             />
+                        </Link>
 
-                        </button>
-
-                        <button className="group border border-slate-500 hover:border-[#C9A227] hover:text-[#C9A227] text-white px-8 py-4 flex items-center gap-3 transition">
-
-                            <PhoneCall size={18} />
-
+                        <a
+                            href={PHONE_HREF}
+                            className="group inline-flex items-center gap-3 border border-slate-500 px-6 sm:px-8 py-4 text-white transition hover:border-[#C9A227] hover:text-[#C9A227] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C9A227]"
+                        >
+                            <PhoneCall size={18} aria-hidden />
                             Call Claims Team
-
-                        </button>
+                        </a>
 
                     </div>
 

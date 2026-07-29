@@ -41,64 +41,51 @@ export default function FAQ() {
 
                 {/* Accordion */}
 
-                <div className="space-y-5">
-
+                <div className="space-y-5" role="list">
                     {faqData.map((faq, index) => {
-
                         const isOpen = open === index;
+                        const panelId = `services-faq-panel-${faq.id}`;
+                        const buttonId = `services-faq-button-${faq.id}`;
 
                         return (
-
                             <div
                                 key={faq.id}
+                                role="listitem"
                                 className="bg-white border border-gray-200 rounded-sm overflow-hidden transition hover:border-[#C9A227]"
                             >
-
-                                {/* Question */}
-
                                 <button
+                                    id={buttonId}
+                                    type="button"
+                                    aria-expanded={isOpen}
+                                    aria-controls={panelId}
                                     onClick={() => setOpen(isOpen ? -1 : index)}
-                                    className="w-full flex justify-between items-center px-8 py-6 text-left"
+                                    className="w-full flex justify-between items-center gap-4 px-6 sm:px-8 py-5 sm:py-6 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C9A227]"
                                 >
-
-                                    <h3 className="text-lg font-semibold text-[#071B3A]">
+                                    <h3 className="text-base sm:text-lg font-semibold text-[#071B3A]">
                                         {faq.question}
                                     </h3>
-
-                                    <div className="text-[#C9A227]">
-
-                                        {isOpen ? (
-                                            <Minus size={22} />
-                                        ) : (
-                                            <Plus size={22} />
-                                        )}
-
-                                    </div>
-
+                                    <span className="text-[#C9A227] shrink-0" aria-hidden>
+                                        {isOpen ? <Minus size={22} /> : <Plus size={22} />}
+                                    </span>
                                 </button>
 
-                                {/* Answer */}
-
                                 <div
-                                    className={`grid transition-all duration-500 ease-in-out ${isOpen
-                                            ? "grid-rows-[1fr]"
-                                            : "grid-rows-[0fr]"
-                                        }`}
+                                    id={panelId}
+                                    role="region"
+                                    aria-labelledby={buttonId}
+                                    className={`grid transition-all duration-500 ease-in-out ${
+                                        isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                                    }`}
                                 >
                                     <div className="overflow-hidden">
-
-                                        <div className="px-8 pb-6 text-gray-600 leading-8">
+                                        <div className="px-6 sm:px-8 pb-6 text-gray-600 leading-8">
                                             {faq.answer}
                                         </div>
-
                                     </div>
                                 </div>
-
                             </div>
-
                         );
                     })}
-
                 </div>
 
             </div>

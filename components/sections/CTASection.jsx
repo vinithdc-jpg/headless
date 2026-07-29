@@ -24,8 +24,8 @@ export default function CTASection() {
                 <div className="mt-12 flex flex-col sm:flex-row justify-center items-center gap-5">
 
                     <Link
-                        href="/contact"
-                        className="group bg-[#C9A227] hover:bg-[#B9961E] text-[#071B3A] font-semibold uppercase tracking-wider px-10 py-4 rounded-sm shadow-lg shadow-[#C9A227]/30 transition duration-300 flex items-center gap-3"
+                        href="/quote"
+                        className="group bg-[#C9A227] hover:bg-[#B9961E] text-[#071B3A] font-semibold uppercase tracking-wider px-10 py-4 rounded-sm shadow-lg shadow-[#C9A227]/30 transition duration-300 flex items-center gap-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                     >
                         Get a Free Quote
                         <ArrowRight

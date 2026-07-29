@@ -1,7 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { industriesData } from "@/data/industriesData";
+import RemoteImage from "@/components/ui/RemoteImage";
 
 export default function Industries() {
     return (
@@ -45,24 +47,19 @@ export default function Industries() {
 
                         <div
                             key={industry.id}
-                            className="group overflow-hidden bg-white border border-gray-200 hover:border-[#C9A227] hover:shadow-2xl transition duration-500"
+                            className="group flex h-full flex-col overflow-hidden bg-white border border-gray-200 hover:border-[#C9A227] hover:shadow-2xl transition duration-500"
                         >
-
-                            {/* Image */}
-
-                            <div className="overflow-hidden h-64">
-
-                                <img
+                            <div className="relative h-64 overflow-hidden">
+                                <RemoteImage
                                     src={industry.image}
                                     alt={industry.title}
-                                    className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 33vw"
+                                    className="object-cover transition duration-700 group-hover:scale-110"
                                 />
-
                             </div>
 
-                            {/* Content */}
-
-                            <div className="p-8">
+                            <div className="flex flex-1 flex-col p-6 sm:p-8">
 
                                 <h3 className="font-serif text-2xl text-[#071B3A]">
                                     {industry.title}
@@ -72,16 +69,17 @@ export default function Industries() {
                                     {industry.description}
                                 </p>
 
-                                <button className="group mt-8 flex items-center gap-2 text-[#C9A227] font-medium">
-
+                                <Link
+                                    href="/services"
+                                    className="group/link mt-auto pt-8 inline-flex items-center gap-2 text-[#C9A227] font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C9A227]"
+                                >
                                     Learn More
-
                                     <ArrowRight
                                         size={17}
-                                        className="transition-transform group-hover:translate-x-1"
+                                        className="transition-transform group-hover/link:translate-x-1"
+                                        aria-hidden
                                     />
-
-                                </button>
+                                </Link>
 
                             </div>
 

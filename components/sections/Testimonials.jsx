@@ -1,4 +1,5 @@
 import { Quote, Star } from "lucide-react";
+import RemoteImage from "@/components/ui/RemoteImage";
 
 const testimonials = [
   {
@@ -66,10 +67,8 @@ export default function Testimonials() {
           {testimonials.map((item, index) => (
             <div
               key={index}
-              className={`bg-white border rounded-sm p-8 transition hover:shadow-xl ${
-                item.active
-                  ? "border-[#C9A227]"
-                  : "border-gray-200"
+              className={`flex h-full flex-col bg-white border rounded-sm p-6 sm:p-8 transition hover:shadow-xl ${
+                item.active ? "border-[#C9A227]" : "border-gray-200"
               }`}
             >
 
@@ -78,8 +77,8 @@ export default function Testimonials() {
                 size={28}
               />
 
-              <p className="text-gray-600 leading-8">
-                "{item.review}"
+              <p className="text-gray-600 leading-8 flex-1">
+                &ldquo;{item.review}&rdquo;
               </p>
 
               <div className="flex gap-1 mt-8 text-[#D8B04C]">
@@ -93,11 +92,12 @@ export default function Testimonials() {
               </div>
 
               <div className="flex items-center gap-4 mt-8">
-
-                <img
+                <RemoteImage
                   src={item.image}
-                  alt={item.name}
-                  className="w-12 h-12 rounded-full object-cover"
+                  alt=""
+                  width={48}
+                  height={48}
+                  className="h-12 w-12 rounded-full object-cover"
                 />
 
                 <div>
@@ -121,7 +121,7 @@ export default function Testimonials() {
 
         {/* Slider Dots */}
 
-        <div className="flex justify-center gap-2 mt-10">
+        <div className="flex justify-center gap-2 mt-10" aria-hidden>
           <span className="w-2 h-2 rounded-full bg-gray-300"></span>
           <span className="w-2 h-2 rounded-full bg-gray-300"></span>
           <span className="w-6 h-2 rounded-full bg-[#C9A227]"></span>

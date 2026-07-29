@@ -81,7 +81,7 @@ export default function ServicesSection() {
                         return (
                             <div
                                 key={index}
-                                className="group bg-white border border-gray-200 rounded-sm p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl"
+                                className="group flex h-full flex-col bg-white border border-gray-200 rounded-sm p-6 sm:p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl"
                             >
                                 {/* Icon */}
                                 <div className="w-14 h-14 border border-[#E8D7A8] rounded flex items-center justify-center mb-8">
@@ -98,14 +98,14 @@ export default function ServicesSection() {
                                 </h3>
 
                                 {/* Description */}
-                                <p className="text-gray-500 leading-7">
+                                <p className="text-gray-500 leading-7 flex-1">
                                     {service.description}
                                 </p>
 
                                 {/* Link */}
                                 <Link
                                     href="/services"
-                                    className="mt-8 inline-flex items-center gap-2 text-[#C9A227] font-medium hover:gap-3 transition-all"
+                                    className="mt-8 inline-flex items-center gap-2 text-[#C9A227] font-medium hover:gap-3 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C9A227]"
                                 >
                                     Learn More
                                     <ArrowRight size={16} />

@@ -4,6 +4,7 @@ import {
     Globe,
     UserRound,
 } from "lucide-react";
+import RemoteImage from "@/components/ui/RemoteImage";
 
 const features = [
     "100+ independent insurance advisers",
@@ -85,21 +86,18 @@ const AboutStory = () => {
 
                     {/* Right */}
 
-                    <div className="relative">
-
-                        <div className="overflow-hidden rounded">
-
-                            <img
+                    <div className="relative mb-16 sm:mb-0">
+                        <div className="relative aspect-[4/5] sm:aspect-auto overflow-hidden rounded min-h-[320px] sm:min-h-[480px] lg:min-h-[560px]">
+                            <RemoteImage
                                 src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1000&q=80"
                                 alt="Meridian team in discussion"
-                                className="w-full h-[560px] object-cover"
+                                fill
+                                sizes="(max-width: 1024px) 100vw, 50vw"
+                                className="object-cover"
                             />
-
                         </div>
 
-                        {/* Floating Experience Card */}
-
-                        <div className="absolute -bottom-8 -left-8 bg-[#071B3A] text-white w-52 p-8 shadow-2xl">
+                        <div className="relative sm:absolute sm:-bottom-8 sm:-left-8 mt-6 sm:mt-0 bg-[#071B3A] text-white w-full sm:w-52 p-6 sm:p-8 shadow-2xl">
 
                             <Calendar
                                 className="text-[#C9A227]"
