@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import {
   LinkedinIcon,
   Mail,
@@ -9,32 +10,32 @@ const leaders = [
   {
     name: "Sarah Mitchell",
     role: "Chief Executive Officer",
-    image: "/team/team-1.jpg",
+    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
     bio: "Over 25 years of experience in commercial insurance and strategic risk advisory.",
   },
   {
     name: "James Thornton",
     role: "Chief Risk Officer",
-    image: "/team/team-2.jpg",
+    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
     bio: "Specialist in enterprise risk, international placements, and Lloyd's market solutions.",
   },
   {
     name: "Emma Collins",
     role: "Director of Client Services",
-    image: "/team/team-3.jpg",
+    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
     bio: "Leading client success with a relationship-first approach and exceptional service standards.",
   },
   {
     name: "Michael Reed",
     role: "Head of Claims",
-    image: "/team/team-4.jpg",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
     bio: "Dedicated claims advocate with expertise in complex commercial and corporate claims.",
   },
 ];
 
 export default function Leadership() {
   return (
-    <section className="bg-[#F8F8F8] py-24">
+    <section id="leadership" className="bg-[#F8F8F8] py-24">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
@@ -119,13 +120,16 @@ export default function Leadership() {
                   {leader.bio}
                 </p>
 
-                <button className="mt-8 flex items-center gap-2 text-[#071B3A] font-medium hover:text-[#C9A227] transition">
+                <Link
+                  href="/about#leadership"
+                  className="mt-8 inline-flex items-center gap-2 text-[#071B3A] font-medium hover:text-[#C9A227] transition"
+                >
 
                   View Profile
 
                   <ArrowRight size={16} />
 
-                </button>
+                </Link>
 
               </div>
 

@@ -29,7 +29,7 @@ export default function ClaimsHero() {
             <div
                 className="absolute inset-0 bg-cover bg-center opacity-10"
                 style={{
-                    backgroundImage: "url('/claims/hero-bg.jpg')",
+                    backgroundImage: "url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1400&q=80')",
                 }}
             />
 

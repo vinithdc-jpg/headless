@@ -34,21 +34,21 @@ export const leadership = [
     {
         name: "Sarah Mitchell",
         role: "Chief Executive Officer",
-        image: "/team/team-1.jpg",
+        image: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=800&q=80",
     },
     {
         name: "James Thornton",
         role: "Chief Risk Officer",
-        image: "/team/team-2.jpg",
+        image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
     },
     {
         name: "Emma Collins",
         role: "Director of Client Services",
-        image: "/team/team-3.jpg",
+        image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
     },
     {
         name: "Michael Reed",
         role: "Head of Claims",
-        image: "/team/team-4.jpg",
+        image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80",
     },
 ];

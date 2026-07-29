@@ -16,7 +16,7 @@ export default function HowWeWork() {
                     <div className="relative">
 
                         <img
-                            src="/services/process.jpg"
+                            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80"
                             alt="How We Work"
                             className="rounded w-full h-[650px] object-cover"
                         />

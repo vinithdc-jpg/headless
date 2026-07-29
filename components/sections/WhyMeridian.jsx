@@ -33,7 +33,7 @@ export default function WhyMeridian() {
             className="relative overflow-hidden py-28 bg-[#071B3A]"
             style={{
                 backgroundImage:
-                    "linear-gradient(rgba(7,27,58,.88), rgba(7,27,58,.88)), url('/office-bg.jpg')",
+                    "linear-gradient(rgba(7,27,58,.88), rgba(7,27,58,.88)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}

@@ -3,7 +3,7 @@ export const officeLocations = [
         id: 1,
         city: "London",
         title: "Head Office",
-        image: "/offices/london.jpg",
+        image: "https://images.unsplash.com/photo-1506976785307-8732e854ad46?auto=format&fit=crop&w=900&q=80",
         address: [
             "One Canada Square",
             "Canary Wharf",
@@ -17,7 +17,7 @@ export const officeLocations = [
         id: 2,
         city: "Manchester",
         title: "Regional Office",
-        image: "/offices/manchester.jpg",
+        image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=900&q=80",
         address: [
             "Spinningfields",
             "3 Hardman Street",
@@ -31,7 +31,7 @@ export const officeLocations = [
         id: 3,
         city: "Edinburgh",
         title: "Scotland Office",
-        image: "/offices/edinburgh.jpg",
+        image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80",
         address: [
             "Exchange Crescent",
             "Conference Square",

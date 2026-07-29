@@ -13,7 +13,7 @@ const features = [
 
 const AboutStory = () => {
     return (
-        <section className="bg-white py-24">
+        <section id="our-story" className="bg-white py-24">
 
             <div className="max-w-7xl mx-auto px-6">
 
@@ -90,8 +90,8 @@ const AboutStory = () => {
                         <div className="overflow-hidden rounded">
 
                             <img
-                                src="/about-story.jpg"
-                                alt="About Meridian"
+                                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1000&q=80"
+                                alt="Meridian team in discussion"
                                 className="w-full h-[560px] object-cover"
                             />
 

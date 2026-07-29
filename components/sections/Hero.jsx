@@ -9,7 +9,7 @@ const HeroSection = () => {
         <section className="relative bg-[#071B3A] text-white overflow-hidden">
 
             {/* Background */}
-            <div className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-right opacity-10"></div>
+            <div className="absolute inset-0 bg-cover bg-right opacity-10" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80')" }}></div>
 
             <div className="relative max-w-7xl mx-auto px-6 py-20">
 

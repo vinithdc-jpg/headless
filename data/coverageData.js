@@ -3,7 +3,7 @@ export const coverageData = [
         id: 1,
         title: "Commercial Property",
         icon: "commercial",
-        image: "/services/commercial.jpg",
+        image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
 
         description:
             "Comprehensive protection for your business premises, contents, stock, equipment, and business interruption. Our specialists tailor policies to safeguard your assets against unforeseen risks while ensuring business continuity.",
@@ -31,7 +31,7 @@ export const coverageData = [
         id: 2,
         title: "Professional Liability",
         icon: "liability",
-        image: "/services/liability.jpg",
+        image: "https://images.unsplash.com/photo-1542223616-c735b0fe3aab?auto=format&fit=crop&w=900&q=80",
 
         description:
             "Protect your business against negligence claims, professional mistakes, and legal costs with tailored professional indemnity solutions for modern businesses.",
@@ -59,7 +59,7 @@ export const coverageData = [
         id: 3,
         title: "Marine & Cargo",
         icon: "marine",
-        image: "/services/marine.jpg",
+        image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80",
 
         description:
             "Protect goods, vessels, freight, and logistics operations with specialist marine insurance designed for international trade.",
@@ -87,7 +87,7 @@ export const coverageData = [
         id: 4,
         title: "Life & Health",
         icon: "health",
-        image: "/services/health.jpg",
+        image: "https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=900&q=80",
 
         description:
             "Protect your employees and loved ones with comprehensive life, health, and critical illness insurance plans tailored to every stage of life.",
@@ -115,7 +115,7 @@ export const coverageData = [
         id: 5,
         title: "Cyber Insurance",
         icon: "cyber",
-        image: "/services/cyber.jpg",
+        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80",
 
         description:
             "Safeguard your business from cyber threats, ransomware, data breaches, and regulatory penalties with comprehensive cyber protection.",
@@ -143,7 +143,7 @@ export const coverageData = [
         id: 6,
         title: "International Risk",
         icon: "international",
-        image: "/services/international.jpg",
+        image: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=900&q=80",
 
         description:
             "Global insurance programmes designed for multinational businesses operating across multiple territories with consistent worldwide protection.",

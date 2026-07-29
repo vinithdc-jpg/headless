@@ -10,7 +10,7 @@ export default function ContactHero() {
             <div
                 className="absolute inset-0 bg-cover bg-center opacity-10"
                 style={{
-                    backgroundImage: "url('/contact/hero-bg.jpg')",
+                    backgroundImage: "url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80')",
                 }}
             />
 
